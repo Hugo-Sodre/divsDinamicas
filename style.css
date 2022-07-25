@@ -1,0 +1,14 @@
+#botao{
+    padding: 15px;
+    border-radius: 10%;
+    border: solid 1px;
+}
+
+#seletor{
+    padding: 10px;
+    font-size: 20px;
+}
+.divs{
+    padding: 20px;
+    border: solid 1px;
+}
