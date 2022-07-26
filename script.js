@@ -1,17 +1,40 @@
-var botao = document.getElementById('botao')
+const body = document.body;
+var contador = contador + 1;
 
-var quantidadeCol;
-var quantidadeLin;
-var seletores = document.getElementById('seletor').value
 
-function gerarDiv(){
-    for(var i = 1; i = seletores; i++){
-              
-        for(var j = 0; j = seletores; j++){
-            quantidadeCol = seletores /2;
-            var criaDiv = document.createElement('div')
-            document.body.appendChild(criaDiv)
+
+function geraDiv() {
+    var seletores = document.getElementById("seletor");
+    var option = seletores.options[seletores.selectedIndex];
+    console.log(option.value);
+    
+    // 
+    let div = document.createElement("div");
+        div.id = '1';
+        div.className = 'pai'
+        div.classList.add("divs");
+
+        
+
+    // 
+    var valor = option.value;
+    var v2 = valor /2;
+    for (let i = 0; i < 2; i++) {
+        
+        body.append(div);
+        for (let j = 1; j < v2; j++) {
+            
+            let div2= document.createElement("div");
+            div2.classList.add("divs");
+            body.appendChild(div2);
+            console.log(div2); 
         }
-    } 
-         
+        // }
+        
+    }
 }
+// let div = document.createElement("div");
+// div.classList.add("divs");
+
+// body.appendChild(div);
+// console.log(div); 
